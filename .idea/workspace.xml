@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="unfinished tech jobs assignment">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" afterDir="false" />
@@ -69,55 +68,7 @@
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.JobTest.testJobsForEquality">
-    <configuration name="JobTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.JobTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="JobTest.testSettingJobId" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testSettingJobId&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="TestNG.JobTest">
     <configuration name="JobTest" type="JUnit" factoryName="JUnit">
       <module name="techjobs-oo-java17-graded.test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -130,7 +81,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JobTest.testJobConstructorSetsAllFields" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="JobTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="techjobs-oo-java17-graded.test" />
       <extension name="coverage">
         <pattern>
@@ -140,15 +91,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.launchcode.techjobs.oo" />
       <option name="MAIN_CLASS_NAME" value="org.launchcode.techjobs.oo.JobTest" />
-      <option name="METHOD_NAME" value="testJobConstructorSetsAllFields" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JobTest.testJobsForEquality" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="JobTest.testEmptyJob" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="techjobs-oo-java17-graded.test" />
       <extension name="coverage">
         <pattern>
@@ -158,7 +108,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.launchcode.techjobs.oo" />
       <option name="MAIN_CLASS_NAME" value="org.launchcode.techjobs.oo.JobTest" />
-      <option name="METHOD_NAME" value="testJobsForEquality" />
+      <option name="METHOD_NAME" value="testEmptyJob" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -184,21 +134,57 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JobTest.testToStringContainsCorrectLabelsAndData" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="techjobs-oo-java17-graded.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.launchcode.techjobs.oo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.launchcode.techjobs.oo" />
+      <option name="MAIN_CLASS_NAME" value="org.launchcode.techjobs.oo.JobTest" />
+      <option name="METHOD_NAME" value="testToStringContainsCorrectLabelsAndData" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JobTest.testToStringHandlesEmptyField" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="techjobs-oo-java17-graded.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.launchcode.techjobs.oo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.launchcode.techjobs.oo" />
+      <option name="MAIN_CLASS_NAME" value="org.launchcode.techjobs.oo.JobTest" />
+      <option name="METHOD_NAME" value="testToStringHandlesEmptyField" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Gradle.JobTest" />
-      <item itemvalue="Gradle.JobTest.testSettingJobId" />
       <item itemvalue="JUnit.JobTest" />
-      <item itemvalue="TestNG.JobTest.testJobConstructorSetsAllFields" />
-      <item itemvalue="TestNG.JobTest.testJobsForEquality" />
+      <item itemvalue="TestNG.JobTest" />
+      <item itemvalue="TestNG.JobTest.testEmptyJob" />
       <item itemvalue="TestNG.JobTest.testSettingJobId" />
+      <item itemvalue="TestNG.JobTest.testToStringContainsCorrectLabelsAndData" />
+      <item itemvalue="TestNG.JobTest.testToStringHandlesEmptyField" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.JobTest.testJobsForEquality" />
-        <item itemvalue="TestNG.JobTest.testJobConstructorSetsAllFields" />
+        <item itemvalue="TestNG.JobTest" />
+        <item itemvalue="TestNG.JobTest.testToStringContainsCorrectLabelsAndData" />
         <item itemvalue="TestNG.JobTest.testSettingJobId" />
-        <item itemvalue="Gradle.JobTest.testSettingJobId" />
-        <item itemvalue="Gradle.JobTest" />
+        <item itemvalue="TestNG.JobTest.testEmptyJob" />
+        <item itemvalue="TestNG.JobTest.testToStringHandlesEmptyField" />
       </list>
     </recent_temporary>
   </component>
@@ -219,11 +205,47 @@
       <option name="project" value="LOCAL" />
       <updated>1704931121018</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="unfinished tech jobs assignment">
+      <option name="closed" value="true" />
+      <created>1704933465123</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704933465123</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="unfinished tech jobs assignment" />
     <option name="LAST_COMMIT_MESSAGE" value="unfinished tech jobs assignment" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.AssertionError" package="java.lang" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="java-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/techjobs_oo_java17_graded$JobTest.ic" NAME="JobTest Coverage Results" MODIFIED="1704936965370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.launchcode.techjobs.oo.*</FILTER>
+    </SUITE>
   </component>
 </project>

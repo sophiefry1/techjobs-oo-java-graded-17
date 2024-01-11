@@ -1,5 +1,7 @@
 package org.launchcode.techjobs.oo;
 
+import org.hamcrest.core.AnyOf;
+
 import java.util.Objects;
 
 public class Job {
@@ -72,6 +74,45 @@ public class Job {
     public int getId() {
         return id;
     }
+
+    private String getFieldData(String value) {
+        if(value == null || value.isEmpty()) {
+            return "Data not available";
+        }
+
+        return value;
+    }
+    private Boolean allJobDataEmpty() {
+        if(name == null
+                && employer == null
+                && location == null
+                && positionType == null
+                && coreCompetency == null
+        ) {
+            return true;
+        }
+
+        return false;
+    }
+
+
+    @Override
+    public String toString() {
+
+                if(allJobDataEmpty()) {
+                    return "OOPS! This job does not seem to exist.";
+                }
+
+              return System.lineSeparator()
+                      + "ID: " + id + System.lineSeparator()
+                      + "Name: " + getFieldData(name) + System.lineSeparator()
+                      + "Employer: " + getFieldData(employer.getValue()) + System.lineSeparator()
+                      + "Location: " + getFieldData(location.getValue()) + System.lineSeparator()
+                      + "Position Type: " + getFieldData(positionType.getValue()) + System.lineSeparator()
+                      + "Core Competency: " + getFieldData(coreCompetency.getValue()) + System.lineSeparator();
+    }
+
+
 
     @Override
     public boolean equals(Object o) {

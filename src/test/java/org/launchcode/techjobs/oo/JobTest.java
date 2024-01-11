@@ -37,5 +37,44 @@ public class JobTest {
            Job secondJob = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
            assertFalse(firstJob.equals(secondJob));
        }
+       @Test
+    public void testToStringStartsAndEndsWithNewLine(){
+        Job job = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
 
+        String description = job.toString();
+
+        assertEquals(description.substring(0, 1), System.lineSeparator());
+        assertEquals(description.substring(description.length() - 1), System.lineSeparator());
+       }
+       @Test
+    public void testToStringContainsCorrectLabelsAndData(){
+           Job job = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+
+           String description = job.toString();
+
+            // If this test is ran by itself the id would be 1 instead of 7
+           assertTrue(description.contains("ID: 7" + System.lineSeparator()));
+           assertTrue(description.contains("Name: Product tester" + System.lineSeparator()));
+           assertTrue(description.contains("Employer: ACME" + System.lineSeparator()));
+           assertTrue(description.contains("Location: Desert" + System.lineSeparator()));
+           assertTrue(description.contains("Position Type: Quality control" + System.lineSeparator()));
+           assertTrue(description.contains("Core Competency: Persistence" + System.lineSeparator()));
+       }
+
+       @Test
+       public void testToStringHandlesEmptyField(){
+        Job job = new Job("", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+
+        String description = job.toString();
+
+        assertTrue(description.contains("Name: Data not available" + System.lineSeparator()));
+    }
+    @Test
+    public void testEmptyJob(){
+        Job job = new Job();
+
+        String description = job.toString();
+
+        assertEquals(description, "OOPS! This job does not seem to exist.");
+    }
 }
