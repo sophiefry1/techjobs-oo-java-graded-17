@@ -69,6 +69,10 @@ public class Job {
         this.coreCompetency = coreCompetency;
     }
 
+    public int getId() {
+        return id;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
