@@ -52,7 +52,7 @@ public class JobTest {
 
            String description = job.toString();
 
-            // If this test is ran by itself the id would be 1 instead of 7
+
            assertTrue(description.contains("ID: 7" + System.lineSeparator()));
            assertTrue(description.contains("Name: Product tester" + System.lineSeparator()));
            assertTrue(description.contains("Employer: ACME" + System.lineSeparator()));
